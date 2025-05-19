@@ -4,28 +4,28 @@ import java.util.Scanner;
 
 public class JavaMethodExample {
     public static void main ( String[] args ) {
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Program starts.");
-        greets();
-        askUserAge();
+        greets(scanner);
+        askUserAge(scanner);
         System.out.println("Program ends.");
+
+        scanner.close();
     }
 
-    public static void greets(){
-        Scanner sc = new Scanner(System.in);
+    public static void greets(Scanner scanner){
         System.out.println("Enter your name: ");
-        String name = sc.nextLine();
+        String name = scanner.nextLine();
         System.out.println("Hello " + name + ".");
-        sc.close();
     }
 
-    public static void askUserAge(){
-        Scanner sc = new Scanner(System.in);
+    public static void askUserAge(Scanner scanner){
         System.out.println("How old are you?");
-        String ageString = sc.nextLine();
+        String ageString = scanner.nextLine();
+        System.out.println("Your age is " + ageString);
         int age = Integer.parseInt(ageString);
         validateAge( age );
-
-        sc.close();
     }
 
     public static void validateAge(int age){
