@@ -8,7 +8,8 @@ public class JavaMethodExample {
 
         System.out.println("Program starts.");
         greets(scanner);
-        askUserAge(scanner);
+        int userAge = askUserAge(scanner);
+        validateAge( userAge );
         System.out.println("Program ends.");
 
         scanner.close();
@@ -20,12 +21,12 @@ public class JavaMethodExample {
         System.out.println("Hello " + name + ".");
     }
 
-    public static void askUserAge(Scanner scanner){
+    public static int askUserAge(Scanner scanner){
         System.out.println("How old are you?");
         String ageString = scanner.nextLine();
         System.out.println("Your age is " + ageString);
         int age = Integer.parseInt(ageString);
-        validateAge( age );
+        return age;
     }
 
     public static void validateAge(int age){
