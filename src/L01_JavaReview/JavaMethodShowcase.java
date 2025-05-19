@@ -2,7 +2,7 @@ package L01_JavaReview;
 
 import java.util.Scanner;
 
-public class JavaMethodExample {
+public class JavaMethodShowcase {
     public static void main ( String[] args ) {
         Scanner scanner = new Scanner(System.in);
 
