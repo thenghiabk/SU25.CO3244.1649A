@@ -1,14 +1,14 @@
-package L01_JavaReview;
+package L01_JavaReview.JavaFundamentals;
 
 import java.util.Scanner;
 
-public class JavaMethodShowcase {
+public class F09Methods {
     public static void main ( String[] args ) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Program starts.");
         greets(scanner);
-        int userAge = askUserAge(scanner);
+        int userAge = getUserAge(scanner);
         validateAge( userAge );
         System.out.println("Program ends.");
 
@@ -21,7 +21,7 @@ public class JavaMethodShowcase {
         System.out.println("Hello " + name + ".");
     }
 
-    public static int askUserAge(Scanner scanner){
+    public static int getUserAge(Scanner scanner){
         System.out.println("How old are you?");
         String ageString = scanner.nextLine();
         System.out.println("Your age is " + ageString);
