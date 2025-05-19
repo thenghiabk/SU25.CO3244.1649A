@@ -1,0 +1,7 @@
+package L01_JavaReview;
+
+public class AnotherClass {
+    public static void main ( String[] args ) {
+        System.out.println("Hello Greenwich");
+    }
+}
