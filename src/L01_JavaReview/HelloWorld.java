@@ -114,30 +114,59 @@ public class HelloWorld {
             Ref: https://www.w3schools.com/java/java_for_loop.asp
          */
 
-        int finalI = 0;
+        //int finalI = 0;
+        //
+        //for (int i = 0; i < 5; i++) {
+        //    finalI = i;
+        //    // Solution 1
+        //    //if (i % 2 == 0) {
+        //    //    System.out.println(i); // prints 0, 2, 4
+        //    //}
+        //
+        //    // Solution 2
+        //    //i++;
+        //
+        //    // Solution 3
+        //    if (i % 2 != 0) {
+        //        continue;
+        //    }
+        //    System.out.println(i);
+        //
+        //}
+        //
+        //System.out.println(finalI);
 
-        for (int i = 0; i < 5; i++) {
-            finalI = i;
-            // Solution 1
-            //if (i % 2 == 0) {
-            //    System.out.println(i); // prints 0, 2, 4
-            //}
+        /*
+            Example 7: Arrays
+            Ref: https://www.w3schools.com/java/java_arrays.asp
+         */
 
-            // Solution 2
-            //i++;
+        //int[] numbers = new int[7];
+        //numbers[0] = 10;
+        //numbers[1] = 20;
+        //numbers[2] = 30;
+        //numbers[3] = 40;
+        //numbers[4] = 50;
 
-            // Solution 3
-            if (i % 2 != 0) {
-                continue;
-            }
-            System.out.println(i);
+        //for ( int i = 0; i < 5; i++ ) {
+        //    numbers[i] = i*10 + 10;
+        //}
 
+        //System.out.println(numbers[0]);
+        //System.out.println(numbers[1]);
+        //System.out.println(numbers[2]);
+        //System.out.println(numbers[3]);
+        //System.out.println(numbers[4]);
+
+        //for (int i = 0; i < numbers.length; i++ ) {
+        //    System.out.println(numbers[i]);
+        //}
+
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda", "Mercedes", "Audi"};
+
+        for (int i = 0; i < cars.length; i++) {
+            System.out.println(cars[i]);
         }
-
-        System.out.println(finalI);
-
-
-
 
 
 
