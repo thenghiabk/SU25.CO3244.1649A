@@ -162,13 +162,35 @@ public class HelloWorld {
         //    System.out.println(numbers[i]);
         //}
 
-        String[] cars = {"Volvo", "BMW", "Ford", "Mazda", "Mercedes", "Audi"};
+        //String[] cars = {"Volvo", "BMW", "Ford", "Mazda", "Mercedes", "Audi"};
+        //
+        //for (int i = 0; i < cars.length; i++) {
+        //    System.out.println(cars[i]);
+        //}
 
-        for (int i = 0; i < cars.length; i++) {
-            System.out.println(cars[i]);
+        /*
+            Example 8: xxx
+            Ref: xxx
+         */
+
+        int[] numbers = new int[7]; // Create an array of size 7
+        numbers[0] = 10;
+        numbers[1] = 20;
+        numbers[2] = 30;
+        numbers[3] = 40;
+        numbers[4] = 50;
+
+        int[] anotherNumbers = new int[ numbers.length ]; // Create an array of size 7
+
+        for(int i = 0; i < numbers.length; i++ ) { // Copy the values of numbers to anotherNumbers
+            anotherNumbers[i] = numbers[i];
         }
 
+        for (int i = 0; i < anotherNumbers.length; i++ ) { // Print the values of anotherNumbers
+            System.out.println(anotherNumbers[i]);
+        }
 
+        System.out.println(anotherNumbers[10]);
 
     }
 }
