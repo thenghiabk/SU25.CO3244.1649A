@@ -8,7 +8,7 @@ public class SimpleBankingSystem {
 
         System.out.print("Enter initial balance: ");
         double balance = Double.parseDouble( scanner.nextLine() );
-        System.out.println("Initial balance: " + balance);
+        System.out.println("Your account has been created. Current balance: " + balance);
 
         boolean running = true; // Variable to store user's choice
 
@@ -19,7 +19,7 @@ public class SimpleBankingSystem {
             System.out.println("2. Withdraw");
             System.out.println("3. Transaction History");
             System.out.println("4. Exit");
-            System.out.print("Please select an option (1-4): ");
+            System.out.print("Please enter your choice (1-4): ");
 
             String userChoice = scanner.nextLine();
 
@@ -59,7 +59,6 @@ public class SimpleBankingSystem {
                 default:
                     System.out.println("Invalid option. Please select a valid option (1-4).");
                     break;
-
             }
 
         } while (running);
