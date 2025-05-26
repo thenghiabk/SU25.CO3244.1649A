@@ -28,26 +28,36 @@ public class ComplexBankingSystem {
             System.out.println("-----------");
             System.out.println("Banking Menu");
             System.out.println("1. Select Account");
-            System.out.println("2. Deposit");
-            System.out.println("3. Withdraw");
-            System.out.println("4. Transaction History");
-            System.out.println("5. Exit");
+            System.out.println("2. Dislay Accounts");
+            System.out.println("3. Deposit");
+            System.out.println("4. Withdraw");
+            System.out.println("5. Transaction History");
+            System.out.println("6. Exit");
             System.out.print("Please enter your choice (1-5): ");
 
             String userChoice = scanner.nextLine(); // Read user's choice
+            int currentAccount = -1; // will be set when user selects an account
 
             switch ( userChoice ) {
-                case "1":
+                case "1": // Select Account
+                    System.out.print("Enter account number (1-" + accountCount + "): ");
+                    currentAccount = Integer.parseInt( scanner.nextLine() ) - 1; // Convert to 0-based index
                     break;
 
-                case "2": // Deposit
-                    //System.out.print("Enter deposit amount: ");
-                    //double depositAmount = Double.parseDouble( scanner.nextLine() );
-                    //
-                    //// Check if the deposit amount is valid
-                    //if (depositAmount > 0) {
-                    //    balance += depositAmount;
-                    //
+                case "2": // Display Accounts
+                    for (int i = 0; i < accountCount; i++) {
+                        System.out.println("Account " + (i+1) + ": " + balances[i]); // Print account balance
+                    }
+                    break;
+
+                case "3": // Deposit
+                    System.out.print("Enter deposit amount: ");
+                    double depositAmount = Double.parseDouble( scanner.nextLine() );
+
+                    // Check if the deposit amount is valid
+                    if (depositAmount > 0) {
+                        balances[currentAccount] += depositAmount;
+
                     //    if (transactionIndex == 5){
                     //        // shift the array to the left
                     //        for (int i = 0; i < 4; i++){
@@ -59,14 +69,14 @@ public class ComplexBankingSystem {
                     //
                     //    transactions[transactionIndex] = depositAmount;
                     //    transactionIndex = transactionIndex + 1;
-                    //
-                    //    System.out.println("Updated balance: " + balance);
-                    //} else {
-                    //    System.out.println("Invalid deposit amount. Please enter a positive number.");
-                    //}
+
+                        System.out.println("Updated balance: " + balances[currentAccount]);
+                    } else {
+                        System.out.println("Invalid deposit amount. Please enter a positive number.");
+                    }
                     break;
 
-                case "3": // Withdraw
+                case "4": // Withdraw
                     //System.out.print("Enter withdrawal amount: ");
                     //double withdrawalAmount = Double.parseDouble( scanner.nextLine() );
                     //
@@ -94,7 +104,7 @@ public class ComplexBankingSystem {
                     //    System.out.println("Insufficient funds.");
                     //}
                     break;
-                case "4":
+                case "5":
                     //System.out.println("Transaction History");
                     //
                     //for (int i = 0; i < transactionIndex; i++ ){
@@ -110,7 +120,7 @@ public class ComplexBankingSystem {
                     //}
 
                     break;
-                case "5":
+                case "6":
                     System.out.println("Exiting...");
                     running = false;
                     break;
