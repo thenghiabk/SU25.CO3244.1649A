@@ -59,6 +59,15 @@ public class ComplexBankingSystem {
                     if (depositAmount > 0) {
                         balances[currentAccount] += depositAmount;
 
+                        if (transactionIndices[currentAccount] == 5){
+                            // shift the array to the left
+                            for (int i = 0; i < 4; i++){
+                                transactions[currentAccount][i] = transactions[currentAccount][i+1];
+                            }
+
+                            transactionIndices[currentAccount] = 4;
+                        }
+
                         transactions[currentAccount][transactionIndices[currentAccount]] = depositAmount;
                         transactionIndices[currentAccount]++;
 
@@ -74,6 +83,15 @@ public class ComplexBankingSystem {
 
                     if (withdrawalAmount > 0 && withdrawalAmount <= balances[currentAccount]) {
                         balances[currentAccount] -= withdrawalAmount;
+
+                        if (transactionIndices[currentAccount] == 5){
+                            // shift the array to the left
+                            for (int i = 0; i < 4; i++){
+                                transactions[currentAccount][i] = transactions[currentAccount][i+1];
+                            }
+
+                            transactionIndices[currentAccount] = 4;
+                        }
 
                         transactions[currentAccount][transactionIndices[currentAccount]] = -withdrawalAmount;
                         transactionIndices[currentAccount]++;
