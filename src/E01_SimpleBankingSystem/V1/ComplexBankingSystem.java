@@ -11,6 +11,7 @@ public class ComplexBankingSystem {
 
         // 2-D array to store transaction history
         double[][] transactions = new double[ 5 ][ 5 ];
+        int[] transactionIndices = new int[ 5 ];
 
         System.out.print("Enter number of accounts to create (1-5):");
         int accountCount = Integer.parseInt( scanner.nextLine() );
@@ -58,17 +59,8 @@ public class ComplexBankingSystem {
                     if (depositAmount > 0) {
                         balances[currentAccount] += depositAmount;
 
-                    //    if (transactionIndex == 5){
-                    //        // shift the array to the left
-                    //        for (int i = 0; i < 4; i++){
-                    //            transactions[i] = transactions[i+1];
-                    //        }
-                    //
-                    //        transactionIndex = 4;
-                    //    }
-                    //
-                    //    transactions[transactionIndex] = depositAmount;
-                    //    transactionIndex = transactionIndex + 1;
+                        transactions[currentAccount][transactionIndices[currentAccount]] = depositAmount;
+                        transactionIndices[currentAccount]++;
 
                         System.out.println("Updated balance: " + balances[currentAccount]);
                     } else {
@@ -82,19 +74,10 @@ public class ComplexBankingSystem {
 
                     if (withdrawalAmount > 0 && withdrawalAmount <= balances[currentAccount]) {
                         balances[currentAccount] -= withdrawalAmount;
-                    //
-                    //    if (transactionIndex == 5){
-                    //        // shift the array to the left
-                    //        for (int i = 0; i < 4; i++){
-                    //            transactions[i] = transactions[i+1];
-                    //        }
-                    //
-                    //        transactionIndex = 4;
-                    //    }
-                    //
-                    //    transactions[transactionIndex] = -withdrawalAmount;
-                    //    transactionIndex = transactionIndex + 1;
-                    //
+
+                        transactions[currentAccount][transactionIndices[currentAccount]] = -withdrawalAmount;
+                        transactionIndices[currentAccount]++;
+
                         System.out.println("Updated balance: " + balances[currentAccount]);
                     } else if(withdrawalAmount <= 0){
                         System.out.println("Invalid withdrawal amount. Please enter a positive number.");
@@ -105,19 +88,17 @@ public class ComplexBankingSystem {
                     }
                     break;
                 case "5":
-                    //System.out.println("Transaction History");
-                    //
-                    //for (int i = 0; i < transactionIndex; i++ ){
-                    //
-                    //    if (transactions[i] > 0) {
-                    //        System.out.println("+" + transactions[i]);
-                    //    } else {
-                    //        System.out.println(transactions[i]);
-                    //    }
-                    //
-                    //    // short-hand if
-                    //    //System.out.println(transactions[i] > 0 ? "+" + transactions[i] : transactions[i]);
-                    //}
+                    System.out.println("Transaction History");
+
+                    for (int i = 0; i < transactionIndices[currentAccount] ; i++ ){
+
+                        if (transactions[currentAccount][i] > 0) {
+                            System.out.println("+" + transactions[currentAccount][i]);
+                        } else {
+                            System.out.println(transactions[currentAccount][i]);
+                        }
+
+                    }
 
                     break;
                 case "6":
