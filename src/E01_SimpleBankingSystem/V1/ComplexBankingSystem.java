@@ -23,12 +23,13 @@ public class ComplexBankingSystem {
         }
 
         boolean running = true; // Variable to store user's choice
+        int currentAccount = -1; // will be set when user selects an account
 
         do {
             System.out.println("-----------");
             System.out.println("Banking Menu");
             System.out.println("1. Select Account");
-            System.out.println("2. Dislay Accounts");
+            System.out.println("2. Display Accounts");
             System.out.println("3. Deposit");
             System.out.println("4. Withdraw");
             System.out.println("5. Transaction History");
@@ -36,7 +37,6 @@ public class ComplexBankingSystem {
             System.out.print("Please enter your choice (1-5): ");
 
             String userChoice = scanner.nextLine(); // Read user's choice
-            int currentAccount = -1; // will be set when user selects an account
 
             switch ( userChoice ) {
                 case "1": // Select Account
@@ -77,11 +77,11 @@ public class ComplexBankingSystem {
                     break;
 
                 case "4": // Withdraw
-                    //System.out.print("Enter withdrawal amount: ");
-                    //double withdrawalAmount = Double.parseDouble( scanner.nextLine() );
-                    //
-                    //if (withdrawalAmount > 0 && withdrawalAmount <= balance) {
-                    //    balance -= withdrawalAmount;
+                    System.out.print("Enter withdrawal amount: ");
+                    double withdrawalAmount = Double.parseDouble( scanner.nextLine() );
+
+                    if (withdrawalAmount > 0 && withdrawalAmount <= balances[currentAccount]) {
+                        balances[currentAccount] -= withdrawalAmount;
                     //
                     //    if (transactionIndex == 5){
                     //        // shift the array to the left
@@ -95,14 +95,14 @@ public class ComplexBankingSystem {
                     //    transactions[transactionIndex] = -withdrawalAmount;
                     //    transactionIndex = transactionIndex + 1;
                     //
-                    //    System.out.println("Updated balance: " + balance);
-                    //} else if(withdrawalAmount <= 0){
-                    //    System.out.println("Invalid withdrawal amount. Please enter a positive number.");
-                    //}
-                    //else
-                    //{
-                    //    System.out.println("Insufficient funds.");
-                    //}
+                        System.out.println("Updated balance: " + balances[currentAccount]);
+                    } else if(withdrawalAmount <= 0){
+                        System.out.println("Invalid withdrawal amount. Please enter a positive number.");
+                    }
+                    else
+                    {
+                        System.out.println("Insufficient funds.");
+                    }
                     break;
                 case "5":
                     //System.out.println("Transaction History");
