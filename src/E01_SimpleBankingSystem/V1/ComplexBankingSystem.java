@@ -22,8 +22,6 @@ public class ComplexBankingSystem {
             System.out.println("Account " + (i+1) + " has been created with initial balance: " + balances[i]);
         }
 
-
-
         boolean running = true; // Variable to store user's choice
 
         do {
