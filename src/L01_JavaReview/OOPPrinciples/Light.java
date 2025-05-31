@@ -24,6 +24,11 @@ public class Light {
             this.brightness = brightness;
         }
     }
+
+    public void displayInfo() {
+        String status = this.isOn ? "on" : "off";
+        System.out.println(this.name + " is " + status + " with brightness " + this.brightness + "%");
+    }
 }
 
 class LightTestDrive {
@@ -32,5 +37,12 @@ class LightTestDrive {
         light1.setName("Bedroom");
         light1.setBrightness(50);
         light1.turnOn();
+        light1.displayInfo(); // prints "Bedroom is on with brightness 50%"
+
+        Light light2 = new Light();
+        light2.setName("Bathroom");
+        light2.setBrightness(75);
+        light2.turnOff();
+        light2.displayInfo(); // prints "Bathroom is off with brightness 75%"
     }
 }
