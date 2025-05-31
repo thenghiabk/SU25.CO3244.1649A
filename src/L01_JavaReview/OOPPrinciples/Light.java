@@ -49,58 +49,28 @@ public class Light {
     }
 }
 
-class AutoLight{
+class AutoLight extends Light {
     // attributes
-    private String name;
-    private boolean isOn;
-    private int brightness;
     private int timer;
 
     // constructor
     public AutoLight() {
-        this.name = "Light";
-        this.isOn = false;
-        this.brightness = 50;
-        this.timer = 30;
+        super(); // call the parent constructor
     }
 
     public AutoLight(String name, int brightness, int timer, boolean isOn) {
-        setName( name );
-        setBrightness( brightness );
+        super( name, brightness, isOn ); // call the parent constructor
         setTimer( timer );
-        if (isOn) {
-            turnOn();
-        } else {
-            turnOff();
-        }
-    }
-
-    // methods
-    public void turnOn() {
-        isOn = true;
-    }
-
-    public void turnOff() {
-        isOn = false;
-    }
-
-    public void setName(String name){
-        this.name = name.toUpperCase();
-    }
-
-    public void setBrightness(int brightness){
-        if (brightness > 0 && brightness <= 100) {
-            this.brightness = brightness;
-        }
     }
 
     public void setTimer(int timer){
         this.timer = timer;
     }
 
+    @Override
     public void displayInfo() {
-        String status = this.isOn ? "on" : "off";
-        System.out.println(this.name + " is " + status + " with brightness " + this.brightness + "%");
+        super.displayInfo();
+        System.out.println("Timer: " + this.timer);
     }
 }
 
@@ -110,18 +80,28 @@ class LightTestDrive {
         light1.setName("Bedroom");
         light1.setBrightness(50);
         light1.turnOn();
-        light1.displayInfo(); // prints "Bedroom is on with brightness 50%"
+        //light1.displayInfo(); // prints "Bedroom is on with brightness 50%"
 
         Light light2 = new Light("Bathroom", 75, false);
-        light2.displayInfo(); // prints "Bathroom is off with brightness 75%"
+        //light2.displayInfo(); // prints "Bathroom is off with brightness 75%"
 
-        AutoLight autoLight1 = new AutoLight();
-        autoLight1.setName("Livingroom");
-        autoLight1.setBrightness(50);
-        autoLight1.setTimer(30);
-        autoLight1.turnOn();
+        AutoLight light3 = new AutoLight();
+        light3.setName("Livingroom");
+        light3.setBrightness(50);
+        light3.setTimer(30);
+        light3.turnOn();
 
-        AutoLight autoLight2 = new AutoLight("Kitchen", 75, false);
-        autoLight2.displayInfo();
+        AutoLight light4 = new AutoLight("Kitchen", 75, 15, false);
+        //light4.displayInfo(); // prints "Kitchen is off with brightness 75%. Timer: 15."
+
+        Light[] myLights = {light1, light2, light3, light4};
+
+        for (Light l : myLights) {
+            l.displayInfo();
+            System.out.println("---");
+        }
+
+
+
     }
 }
