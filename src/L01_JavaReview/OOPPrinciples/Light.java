@@ -61,11 +61,13 @@ class AutoLight{
         this.name = "Light";
         this.isOn = false;
         this.brightness = 50;
+        this.timer = 30;
     }
 
-    public AutoLight(String name, int brightness, boolean isOn) {
+    public AutoLight(String name, int brightness, int timer, boolean isOn) {
         setName( name );
         setBrightness( brightness );
+        setTimer( timer );
         if (isOn) {
             turnOn();
         } else {
@@ -118,5 +120,8 @@ class LightTestDrive {
         autoLight1.setBrightness(50);
         autoLight1.setTimer(30);
         autoLight1.turnOn();
+
+        AutoLight autoLight2 = new AutoLight("Kitchen", 75, false);
+        autoLight2.displayInfo();
     }
 }
