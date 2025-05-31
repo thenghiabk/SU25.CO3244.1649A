@@ -2,20 +2,49 @@ package E01_SimpleBankingSystem.V2_OOP;
 
 import java.util.Scanner;
 
+class Account{
+    // attributes
+    private double balance;
+    private double[] transactions;
+    private int transactionIndex;
+
+    // constructors
+    public Account(double balance) {
+        setBalance( balance );
+    }
+
+    // methods
+
+    public void setBalance ( double balance ) {
+        if (balance > 0){
+            this.balance = balance;
+        }
+    }
+
+    public double getBalance () {
+        return balance;
+    }
+}
+
 public class OOPBankingSystem {
     public static void main ( String[] args ) {
         Scanner scanner = new Scanner( System.in );
 
+        // Arrays to store account objects
+        Account[] accounts = new Account[ 5 ];
 
-        System.out.print("Enter number of accounts to create (1-5):");
+        System.out.print("Enter number of accounts to create (1-5): ");
         int accountCount = Integer.parseInt( scanner.nextLine() );
 
-        // Initialize the balances array
-        //for (int i = 0; i < accountCount; i++) {
-        //    System.out.print("Enter balance for account " + (i+1) + ": ");
-        //    balances[i] = Double.parseDouble( scanner.nextLine() );
-        //    System.out.println("Account " + (i+1) + " has been created with initial balance: " + balances[i]);
-        //}
+        // Initialize the accounts array
+        for (int i = 0; i < accountCount; i++) {
+            System.out.print("Enter balance for account " + (i+1) + ": ");
+
+            double initialBalance = Double.parseDouble( scanner.nextLine() );
+            accounts[i] = new Account( initialBalance );
+
+            System.out.println("Account " + (i+1) + " has been created with initial balance: " + accounts[i].getBalance());
+        }
 
         boolean running = true; // Variable to store user's choice
         int currentAccount = -1; // will be set when user selects an account
