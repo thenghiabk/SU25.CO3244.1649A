@@ -1,4 +1,4 @@
-package E01_SimpleBankingSystem.V1;
+package E01_SimpleBankingSystem.V1_Complex;
 
 import java.util.Scanner;
 
