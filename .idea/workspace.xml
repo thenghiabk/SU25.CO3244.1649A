@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8715c46f-91e2-414a-8c95-9837624a8c90" name="Changes" comment="update OOPBankingSystem">
+      <change afterPath="$PROJECT_DIR$/src/CodeBuddy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E01_SimpleBankingSystem/V2_OOP/OOPBankingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/E01_SimpleBankingSystem/V2_OOP/OOPBankingSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,20 +43,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ComplexBankingSystem.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LightTestDrive.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OOPBankingSystem.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SimpleBankingSystem.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CodeBuddy.executor": "Debug",
+    "Application.ComplexBankingSystem.executor": "Run",
+    "Application.LightTestDrive.executor": "Run",
+    "Application.OOPBankingSystem.executor": "Run",
+    "Application.SimpleBankingSystem.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Workspace\IdeaProjects\DSA1649A-CO3244\src\E01_SimpleBankingSystem\Simple" />
@@ -243,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748849583203</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update OOPBankingSystem">
+      <option name="closed" value="true" />
+      <created>1748850084433</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1748850084433</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
