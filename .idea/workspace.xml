@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8715c46f-91e2-414a-8c95-9837624a8c90" name="Changes" comment="update OOPBankingSystem">
-      <change afterPath="$PROJECT_DIR$/src/CodeBuddy.java" afterDir="false" />
+    <list default="true" id="8715c46f-91e2-414a-8c95-9837624a8c90" name="Changes" comment="update CodeBuddy">
+      <change afterPath="$PROJECT_DIR$/src/L02_GenericClass/GenericClassExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L03_ArrayList/AbstractList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L03_ArrayList/ArrayListADT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L03_ArrayList/BuiltInArrayListExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CodeBuddy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LiveCoding/CodeBuddy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +49,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.CodeBuddy.executor": "Debug",
+    "Application.BuiltInArrayListExample.executor": "Run",
+    "Application.CodeBuddy.executor": "Run",
     "Application.ComplexBankingSystem.executor": "Run",
     "Application.LightTestDrive.executor": "Run",
     "Application.OOPBankingSystem.executor": "Run",
@@ -53,12 +58,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Workspace/IdeaProjects/DSA1649A-CO3244/src/L03_ArrayList",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace\IdeaProjects\DSA1649A-CO3244\src\L03_ArrayList" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Workspace\IdeaProjects\DSA1649A-CO3244\src\E01_SimpleBankingSystem\Simple" />
     </key>
@@ -252,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748850084433</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update CodeBuddy">
+      <option name="closed" value="true" />
+      <created>1748856447145</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1748856447145</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -260,6 +277,7 @@
     <MESSAGE value="update ComplexBankingSystem" />
     <MESSAGE value="update OOPPrinciples" />
     <MESSAGE value="update OOPBankingSystem" />
-    <option name="LAST_COMMIT_MESSAGE" value="update OOPBankingSystem" />
+    <MESSAGE value="update CodeBuddy" />
+    <option name="LAST_COMMIT_MESSAGE" value="update CodeBuddy" />
   </component>
 </project>
