@@ -38,6 +38,13 @@ class Account {
         }
     }
 
+    public void printTransactions () {
+        System.out.println("Transaction History:");
+        for (int i = 0; i < this.transactionIndex; i++) {
+            System.out.println("Transaction " + (i+1) + ": " + this.transactions[i]);
+        }
+    }
+
     public double getBalance () {
         return balance;
     }
@@ -91,9 +98,9 @@ public class OOPBankingSystem {
                     break;
 
                 case "2": // Display Accounts
-                    //for (int i = 0; i < accountCount; i++) {
-                    //    System.out.println("Account " + (i+1) + ": " + balances[i]); // Print account balance
-                    //}
+                    for (int i = 0; i < accountCount; i++) {
+                        System.out.println("Account " + (i+1) + ": " + accounts[i].getBalance()); // Print account balance
+                    }
                     break;
 
                 case "3": // Deposit
@@ -126,18 +133,8 @@ public class OOPBankingSystem {
                     }
                     break;
                 case "5":
-                    //System.out.println("Transaction History");
-                    //
-                    //for (int i = 0; i < transactionIndices[currentAccount] ; i++ ){
-                    //
-                    //    if (transactions[currentAccount][i] > 0) {
-                    //        System.out.println("+" + transactions[currentAccount][i]);
-                    //    } else {
-                    //        System.out.println(transactions[currentAccount][i]);
-                    //    }
-                    //
-                    //}
-
+                    System.out.println("Transaction History");
+                    currentAccount.printTransactions();
                     break;
                 case "6":
                     System.out.println("Exiting...");
