@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8715c46f-91e2-414a-8c95-9837624a8c90" name="Changes" comment="update CodeBuddy">
-      <change afterPath="$PROJECT_DIR$/src/L02_GenericClass/GenericClassExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L03_ArrayList/AbstractList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L03_ArrayList/ArrayListADT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L03_ArrayList/BuiltInArrayListExample.java" afterDir="false" />
+    <list default="true" id="8715c46f-91e2-414a-8c95-9837624a8c90" name="Changes" comment="update ArrayListADT">
+      <change afterPath="$PROJECT_DIR$/src/L03_ArrayList/ArrayListADTTestDrive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CodeBuddy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LiveCoding/CodeBuddy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L03_ArrayList/ArrayListADT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L03_ArrayList/ArrayListADT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ArrayListADTTestDrive.executor": "Debug",
     "Application.BuiltInArrayListExample.executor": "Run",
     "Application.CodeBuddy.executor": "Run",
     "Application.ComplexBankingSystem.executor": "Run",
@@ -269,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748856447145</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="update ArrayListADT">
+      <option name="closed" value="true" />
+      <created>1748859019662</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1748859019662</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -278,6 +284,7 @@
     <MESSAGE value="update OOPPrinciples" />
     <MESSAGE value="update OOPBankingSystem" />
     <MESSAGE value="update CodeBuddy" />
-    <option name="LAST_COMMIT_MESSAGE" value="update CodeBuddy" />
+    <MESSAGE value="update ArrayListADT" />
+    <option name="LAST_COMMIT_MESSAGE" value="update ArrayListADT" />
   </component>
 </project>
