@@ -2,7 +2,7 @@ package E01_SimpleBankingSystem.V2_OOP;
 
 import java.util.Scanner;
 
-class Account{
+class Account {
     // attributes
     private double balance;
     private double[] transactions;
@@ -11,10 +11,11 @@ class Account{
     // constructors
     public Account(double balance) {
         setBalance( balance );
+        this.transactionIndex = 0;
+        this.transactions = new double[5];
     }
 
     // methods
-
     public void setBalance ( double balance ) {
         if (balance > 0){
             this.balance = balance;
@@ -66,6 +67,8 @@ public class OOPBankingSystem {
                 case "1": // Select Account
                     //System.out.print("Enter account number (1-" + accountCount + "): ");
                     //currentAccount = Integer.parseInt( scanner.nextLine() ) - 1; // Convert to 0-based index
+
+
                     break;
 
                 case "2": // Display Accounts

@@ -1,6 +1,6 @@
 package L01_JavaReview.OOPPrinciples;
 
-public class Light {
+class Light {
     // attributes
     private String name;
     private boolean isOn;
@@ -74,7 +74,7 @@ class AutoLight extends Light {
     }
 }
 
-class LightTestDrive {
+public class LightTestDrive {
     public static void main ( String[] args ) {
         Light light1 = new Light();
         light1.setName("Bedroom");
