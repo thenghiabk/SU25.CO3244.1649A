@@ -48,7 +48,7 @@ public class OOPBankingSystem {
         }
 
         boolean running = true; // Variable to store user's choice
-        int currentAccount = -1; // will be set when user selects an account
+        Account currentAccount = null; // will be set when user selects an account
 
         do {
             System.out.println("-----------");
@@ -65,9 +65,12 @@ public class OOPBankingSystem {
 
             switch ( userChoice ) {
                 case "1": // Select Account
-                    //System.out.print("Enter account number (1-" + accountCount + "): ");
-                    //currentAccount = Integer.parseInt( scanner.nextLine() ) - 1; // Convert to 0-based index
+                    System.out.print("Enter account number (1-" + accountCount + "): ");
+                    int accountIndex = Integer.parseInt( scanner.nextLine() ) - 1; // Convert to 0-based index
 
+                    if (accountIndex >= 0 && accountIndex < accountCount) {
+                        currentAccount = accounts[accountIndex];
+                    }
 
                     break;
 
