@@ -22,6 +22,22 @@ class Account {
         }
     }
 
+    public void deposit ( double amount ) {
+        if (amount > 0) {
+            this.balance += amount;
+            this.transactions[transactionIndex] = amount;
+            this.transactionIndex++;
+        }
+    }
+
+    public void withdraw ( double amount ) {
+        if (amount > 0 && amount <= this.balance) {
+            this.balance -= amount;
+            this.transactions[transactionIndex] = -amount;
+            this.transactionIndex++;
+        }
+    }
+
     public double getBalance () {
         return balance;
     }
@@ -81,58 +97,33 @@ public class OOPBankingSystem {
                     break;
 
                 case "3": // Deposit
-                    //System.out.print("Enter deposit amount: ");
-                    //double depositAmount = Double.parseDouble( scanner.nextLine() );
-                    //
-                    //// Check if the deposit amount is valid
-                    //if (depositAmount > 0) {
-                    //    balances[currentAccount] += depositAmount;
-                    //
-                    //    if (transactionIndices[currentAccount] == 5){
-                    //        // shift the array to the left
-                    //        for (int i = 0; i < 4; i++){
-                    //            transactions[currentAccount][i] = transactions[currentAccount][i+1];
-                    //        }
-                    //
-                    //        transactionIndices[currentAccount] = 4;
-                    //    }
-                    //
-                    //    transactions[currentAccount][transactionIndices[currentAccount]] = depositAmount;
-                    //    transactionIndices[currentAccount]++;
-                    //
-                    //    System.out.println("Updated balance: " + balances[currentAccount]);
-                    //} else {
-                    //    System.out.println("Invalid deposit amount. Please enter a positive number.");
-                    //}
+                    System.out.print("Enter deposit amount: ");
+                    double depositAmount = Double.parseDouble( scanner.nextLine() );
+
+                    // Check if the deposit amount is valid
+                    if (depositAmount > 0) {
+                        currentAccount.deposit( depositAmount );
+                        System.out.println("Updated balance: " + currentAccount.getBalance());
+                    } else {
+                        System.out.println("Invalid deposit amount. Please enter a positive number.");
+                    }
                     break;
 
                 case "4": // Withdraw
-                    //System.out.print("Enter withdrawal amount: ");
-                    //double withdrawalAmount = Double.parseDouble( scanner.nextLine() );
-                    //
-                    //if (withdrawalAmount > 0 && withdrawalAmount <= balances[currentAccount]) {
-                    //    balances[currentAccount] -= withdrawalAmount;
-                    //
-                    //    if (transactionIndices[currentAccount] == 5){
-                    //        // shift the array to the left
-                    //        for (int i = 0; i < 4; i++){
-                    //            transactions[currentAccount][i] = transactions[currentAccount][i+1];
-                    //        }
-                    //
-                    //        transactionIndices[currentAccount] = 4;
-                    //    }
-                    //
-                    //    transactions[currentAccount][transactionIndices[currentAccount]] = -withdrawalAmount;
-                    //    transactionIndices[currentAccount]++;
-                    //
-                    //    System.out.println("Updated balance: " + balances[currentAccount]);
-                    //} else if(withdrawalAmount <= 0){
-                    //    System.out.println("Invalid withdrawal amount. Please enter a positive number.");
-                    //}
-                    //else
-                    //{
-                    //    System.out.println("Insufficient funds.");
-                    //}
+                    System.out.print("Enter withdrawal amount: ");
+                    double withdrawalAmount = Double.parseDouble( scanner.nextLine() );
+
+                    if (withdrawalAmount > 0 && withdrawalAmount <= currentAccount.getBalance()) {
+                        currentAccount.withdraw( withdrawalAmount );
+
+                        System.out.println("Updated balance: " + currentAccount.getBalance());
+                    } else if(withdrawalAmount <= 0){
+                        System.out.println("Invalid withdrawal amount. Please enter a positive number.");
+                    }
+                    else
+                    {
+                        System.out.println("Insufficient funds.");
+                    }
                     break;
                 case "5":
                     //System.out.println("Transaction History");
