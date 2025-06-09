@@ -15,23 +15,46 @@ public class ArrayListADT<E> implements AbstractList<E> {
     @Override
     public boolean add ( E element ) {
         if (nextIndex == elements.length) {
-            E[] biggerElements = (E[]) new Object[elements.length * 2];
+            E[] largerElements = (E[]) new Object[elements.length * 2];
 
             for ( int i = 0; i < elements.length; i++ ) {
-                biggerElements[i] = elements[i];
+                largerElements[i] = elements[i];
             }
 
-            elements = biggerElements;
+            elements = largerElements;
         }
 
         elements[nextIndex] = element;
         nextIndex++;
-        return false;
+        return true;
     }
 
     @Override
     public boolean add ( int index, E element ) {
-        return false;
+
+        if (index < 0 || index > nextIndex) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+
+        if (nextIndex == elements.length) {
+            E[] largerElements = (E[]) new Object[elements.length * 2];
+
+            for ( int i = 0; i < elements.length; i++ ) {
+                largerElements[i] = elements[i];
+            }
+
+            elements = largerElements;
+        }
+
+        // shift elements to the right
+        for ( int i = nextIndex; i > index; i-- ) {
+            elements[i] = elements[i - 1];
+        }
+
+        elements[index] = element;
+        nextIndex++;
+
+        return true;
     }
 
     @Override

@@ -7,9 +7,10 @@ public class ArrayListADTTestDrive {
         myIntList.add(20);
         myIntList.add(30);
         myIntList.add(40);
+        myIntList.add(10, 50);
 
-        ArrayListADT<String> myStringList = new ArrayListADT<>(); // <String>
-        myStringList.add("Hello");
-        myStringList.add("World");
+        //ArrayListADT<String> myStringList = new ArrayListADT<>(); // <String>
+        //myStringList.add("Hello");
+        //myStringList.add("World");
     }
 }
