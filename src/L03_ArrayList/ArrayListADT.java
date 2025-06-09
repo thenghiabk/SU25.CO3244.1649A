@@ -141,4 +141,20 @@ public class ArrayListADT<E> implements AbstractList<E> {
 
         return false;
     }
+
+    @Override
+    public String toString() {
+        String result = "[";
+
+        for ( int i = 0; i < nextIndex; i++ ) {
+            result += elements[i];
+
+            if (i < nextIndex - 1) {
+                result += ", ";
+            }
+        }
+
+        result += "]";
+        return result;
+    }
 }

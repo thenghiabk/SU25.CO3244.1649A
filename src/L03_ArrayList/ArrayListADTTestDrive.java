@@ -1,6 +1,6 @@
 package L03_ArrayList;
 
-public class ArrayListADTTestDrive {
+public class ArrayListADTTestDrive{
     public static void main ( String[] args ) {
         ArrayListADT<Integer> myIntList = new ArrayListADT<>(); // <Integer>
         myIntList.add(10);
@@ -12,13 +12,8 @@ public class ArrayListADTTestDrive {
         myIntList.get(2); // 50
         //myIntList.get(20); // Exception
         myIntList.set(2, 70); // update the array [10, 60, 70, 20, 30, 40], returns '50'
-        myIntList.remove(2);
-        myIntList.remove(2);
-        myIntList.remove(2);
-        myIntList.remove(2);
 
-        //ArrayListADT<String> myStringList = new ArrayListADT<>(); // <String>
-        //myStringList.add("Hello");
-        //myStringList.add("World");
+        System.out.println(myIntList); // [10, 60, 70, 20, 30, 40]
+        System.out.println(myIntList.toString()); // [10, 60, 70, 20, 30, 40]
     }
 }
