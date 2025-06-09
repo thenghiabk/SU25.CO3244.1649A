@@ -112,11 +112,24 @@ public class ArrayListADT<E> implements AbstractList<E> {
 
     @Override
     public int indexOf ( E element ) {
-        return 0;
+
+        for ( int i = 0; i < nextIndex; i++ ) {
+            if (elements[i].equals(element)) {
+                return i;
+            }
+        }
+
+        return -1;
     }
 
     @Override
     public boolean contains ( E element ) {
+        for ( int i = 0; i < nextIndex; i++ ) {
+            if (elements[i].equals(element)) {
+                return true;
+            }
+        }
+
         return false;
     }
 
