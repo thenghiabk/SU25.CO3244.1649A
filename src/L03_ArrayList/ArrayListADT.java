@@ -62,7 +62,6 @@ public class ArrayListADT<E> implements AbstractList<E> {
         if (index < 0 || index > nextIndex) {
             throw new IndexOutOfBoundsException("Index out of bounds");
         }
-
         return elements[index];
     }
 
@@ -79,12 +78,36 @@ public class ArrayListADT<E> implements AbstractList<E> {
 
     @Override
     public E remove ( int index ) {
-        return null;
+        if (index < 0 || index > nextIndex) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+
+        E oldElement = elements[index];
+
+        // shift elements to the left
+        for ( int i = index; i < nextIndex - 1; i++ ) {
+            elements[i] = elements[i + 1];
+        }
+
+        elements[nextIndex - 1] = null;
+        nextIndex--;
+
+        if (nextIndex < elements.length / 3) {
+            E[] largerElements = (E[]) new Object[elements.length / 2];
+
+            for ( int i = 0; i < nextIndex; i++ ) {
+                largerElements[i] = elements[i];
+            }
+
+            elements = largerElements;
+        }
+
+        return oldElement;
     }
 
     @Override
     public int size () {
-        return 0;
+        return nextIndex;
     }
 
     @Override
@@ -99,6 +122,10 @@ public class ArrayListADT<E> implements AbstractList<E> {
 
     @Override
     public boolean isEmpty () {
+        if (nextIndex == 0) {
+            return true;
+        }
+
         return false;
     }
 }

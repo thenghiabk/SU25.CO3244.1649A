@@ -12,6 +12,10 @@ public class ArrayListADTTestDrive {
         myIntList.get(2); // 50
         //myIntList.get(20); // Exception
         myIntList.set(2, 70); // update the array [10, 60, 70, 20, 30, 40], returns '50'
+        myIntList.remove(2);
+        myIntList.remove(2);
+        myIntList.remove(2);
+        myIntList.remove(2);
 
         //ArrayListADT<String> myStringList = new ArrayListADT<>(); // <String>
         //myStringList.add("Hello");
