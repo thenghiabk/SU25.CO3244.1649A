@@ -144,17 +144,29 @@ public class ArrayListADT<E> implements AbstractList<E> {
 
     @Override
     public String toString() {
-        String result = "[";
+        // Option 1
+        //String result = "[";
+        //for ( int i = 0; i < nextIndex; i++ ) {
+        //    result += elements[i];
+        //
+        //    if (i < nextIndex - 1) {
+        //        result += ", ";
+        //    }
+        //}
+        //result += "]";
+        //return result;
 
+        // Option 2
+        StringBuilder result = new StringBuilder();
+        result.append("[");
         for ( int i = 0; i < nextIndex; i++ ) {
-            result += elements[i];
+            result.append(elements[i]);
 
             if (i < nextIndex - 1) {
-                result += ", ";
+                result.append(", ");
             }
         }
-
-        result += "]";
-        return result;
+        result.append("]");
+        return result.toString();
     }
 }
