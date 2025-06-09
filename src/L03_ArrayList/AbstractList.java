@@ -26,7 +26,7 @@ public interface AbstractList<E> {
      */
     E get(int index);
     /**
-     * Replaces the element at the specified position in the list with the
+     * Returns the element at the specified position in the list with the
      * specified element.
      * @param index the position of the element to be replaced
      * @param element the element to be added

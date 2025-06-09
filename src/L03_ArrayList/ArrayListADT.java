@@ -59,12 +59,22 @@ public class ArrayListADT<E> implements AbstractList<E> {
 
     @Override
     public E get ( int index ) {
-        return null;
+        if (index < 0 || index > nextIndex) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+
+        return elements[index];
     }
 
     @Override
     public E set ( int index, E element ) {
-        return null;
+        if (index < 0 || index > nextIndex) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+
+        E oldElement = elements[index];
+        elements[index] = element;
+        return oldElement;
     }
 
     @Override

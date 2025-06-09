@@ -7,7 +7,11 @@ public class ArrayListADTTestDrive {
         myIntList.add(20);
         myIntList.add(30);
         myIntList.add(40);
-        myIntList.add(10, 50);
+        myIntList.add(1, 50);
+        myIntList.add(1, 60);
+        myIntList.get(2); // 50
+        //myIntList.get(20); // Exception
+        myIntList.set(2, 70); // update the array [10, 60, 70, 20, 30, 40], returns '50'
 
         //ArrayListADT<String> myStringList = new ArrayListADT<>(); // <String>
         //myStringList.add("Hello");
