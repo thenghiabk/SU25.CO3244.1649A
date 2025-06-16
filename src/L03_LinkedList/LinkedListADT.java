@@ -1,6 +1,6 @@
 package L03_LinkedList;
 
-public class LinkedListADT<E> implements AbtractLinkedList<E> {
+public class LinkedListADT<E> implements AbstractLinkedList<E> {
     private class Node<E>{
         // attributes
         private E element;
