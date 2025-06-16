@@ -27,12 +27,34 @@ public class LinkedListADT<E> implements AbtractLinkedList<E> {
 
     @Override
     public void addFirst ( E element ) {
+        Node<E> newNode = new Node<>(element);
 
+        // if the list is empty
+        if (head == null && tail == null) {
+            this.head = newNode;
+            this.tail = newNode;
+        } else { // if the list is not empty
+            newNode.next = this.head;
+            this.head = newNode;
+        }
+
+        this.size++;
     }
 
     @Override
     public void addLast ( E element ) {
+        Node<E> newNode = new Node<>(element);
 
+        // if the list is empty
+        if (head == null && tail == null) {
+            this.head = newNode;
+            this.tail = newNode;
+        } else { // if the list is not empty
+            this.tail.next = newNode;
+            this.tail = newNode;
+        }
+
+        this.size++;
     }
 
     @Override
