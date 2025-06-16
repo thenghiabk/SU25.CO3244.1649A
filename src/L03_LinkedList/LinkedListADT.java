@@ -59,7 +59,25 @@ public class LinkedListADT<E> implements AbtractLinkedList<E> {
 
     @Override
     public E removeFirst () {
-        return null;
+
+        // if the list is empty
+        if (head == null && tail == null) {
+            throw new IllegalStateException("List is empty");
+        }
+
+        E oldElement = this.head.element;
+
+        if (head == tail){ // if the list has only one element
+            this.head = null;
+            this.tail = null;
+        } else { // if the list has more than one element
+            Node<E> tempNode = this.head;
+            this.head = this.head.next;
+            tempNode.next = null;
+        }
+
+        this.size--;
+        return oldElement;
     }
 
     @Override
