@@ -10,8 +10,7 @@ public class ArrayListADT<E> implements AbstractList<E> {
         this.elements = (E[]) new Object[3];
         this.nextIndex = 0;
     }
-
-
+    
     @Override
     public boolean add ( E element ) {
         if (nextIndex == elements.length) {
