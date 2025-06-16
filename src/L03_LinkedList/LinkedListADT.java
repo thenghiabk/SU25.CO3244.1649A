@@ -82,26 +82,88 @@ public class LinkedListADT<E> implements AbtractLinkedList<E> {
 
     @Override
     public E removeLast () {
-        return null;
+        // if the list is empty
+        if (head == null && tail == null) {
+            throw new IllegalStateException("List is empty");
+        }
+
+        E oldElement = this.tail.element;
+
+        if (head == tail){ // if the list has only one element
+            this.head = null;
+            this.tail = null;
+        } else { // if the list has more than one element
+            Node<E> tempNode = this.head;
+            while (tempNode.next != this.tail) {
+                tempNode = tempNode.next;
+            }
+            tempNode.next = null;
+            this.tail = tempNode;
+        }
+
+        this.size--;
+        return oldElement;
     }
 
     @Override
     public E getFirst () {
-        return null;
+        // if the list is empty
+        if (head == null && tail == null) {
+            throw new IllegalStateException("List is empty");
+        }
+
+        return this.head.element;
     }
 
     @Override
     public E getLast () {
-        return null;
+        // if the list is empty
+        if (head == null && tail == null) {
+            throw new IllegalStateException("List is empty");
+        }
+
+        return this.tail.element;
     }
 
     @Override
     public int size () {
-        return 0;
+        return this.size;
     }
 
     @Override
     public boolean isEmpty () {
+        if (head == null && tail == null) {
+            return true;
+        }
         return false;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        result.append("[");
+        Node<E> tempNode = this.head;
+        while (tempNode != null) {
+            result.append(tempNode.element);
+            if (tempNode.next != null) {
+                result.append(", ");
+            }
+            tempNode = tempNode.next;
+        }
+
+        result.append("]");
+        return result.toString();
+    }
+}
+
+class LinkedListADTTestDrive {
+    public static void main ( String[] args ) {
+        LinkedListADT<Integer> myIntList = new LinkedListADT<>();
+        myIntList.addFirst(10);
+        myIntList.addFirst(20);
+        myIntList.addFirst(30);
+        myIntList.addLast(40);
+        myIntList.addLast(50);
+        System.out.println(myIntList); // [30, 20, 10, 40, 50]
     }
 }
