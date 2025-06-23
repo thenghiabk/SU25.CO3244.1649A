@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8715c46f-91e2-414a-8c95-9837624a8c90" name="Changes" comment="update LinkedStackADT">
-      <change afterPath="$PROJECT_DIR$/src/L03_LinkedQueue/AbstractLinkedQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L03_LinkedQueue/LinkedQueueADT.java" afterDir="false" />
+    <list default="true" id="8715c46f-91e2-414a-8c95-9837624a8c90" name="Changes" comment="update LinkedQueueADT">
+      <change afterPath="$PROJECT_DIR$/src/E02_TaskManagement/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/E02_TaskManagement/TaskBuddy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/E02_TaskManagement/TaskBuddyTestDrive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L03_LinkedStack/LinkedStackADT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L03_LinkedStack/LinkedStackADT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L03_LinkedList/LinkedListADT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L03_LinkedList/LinkedListADT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L03_LinkedQueue/LinkedQueueADT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L03_LinkedQueue/LinkedQueueADT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +55,7 @@
     "Application.ComplexBankingSystem.executor": "Run",
     "Application.LightTestDrive.executor": "Run",
     "Application.LinkedListADTTestDrive.executor": "Run",
+    "Application.LinkedQueueADTRunner.executor": "Run",
     "Application.LinkedStackTestDrive.executor": "Run",
     "Application.OOPBankingSystem.executor": "Run",
     "Application.SimpleBankingSystem.executor": "Run",
@@ -409,7 +412,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750666390640</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="update LinkedQueueADT">
+      <option name="closed" value="true" />
+      <created>1750668685612</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1750668685612</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -421,6 +432,7 @@
     <MESSAGE value="update ArrayListADT" />
     <MESSAGE value="update LinkedListADT" />
     <MESSAGE value="update LinkedStackADT" />
-    <option name="LAST_COMMIT_MESSAGE" value="update LinkedStackADT" />
+    <MESSAGE value="update LinkedQueueADT" />
+    <option name="LAST_COMMIT_MESSAGE" value="update LinkedQueueADT" />
   </component>
 </project>

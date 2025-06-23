@@ -13,10 +13,10 @@ public class LinkedListADT<E> implements AbstractLinkedList<E> {
         }
     }
 
-    // attributes
-    private Node<E> head;
-    private Node<E> tail;
-    private int size;
+     // attributes
+    private Node<E> head; // Reference to the first node in the queue
+    private Node<E> tail; // Reference to the last node in the queue
+    private int size; // The current number of elements in the queue
 
     // constructor
     public LinkedListADT () {
@@ -132,7 +132,7 @@ public class LinkedListADT<E> implements AbstractLinkedList<E> {
 
     @Override
     public boolean isEmpty () {
-        if (head == null && tail == null) {
+        if (this.head == null && this.tail == null) {
             return true;
         }
         return false;

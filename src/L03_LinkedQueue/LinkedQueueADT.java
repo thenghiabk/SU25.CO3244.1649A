@@ -1,18 +1,10 @@
 package L03_LinkedQueue;
 
-/**
- * This class implements the AbstractLinkedQueue interface to create a
- * linked list based queue data structure. The queue is a First In First Out (FIFO)
- * data structure, meaning the first element added is the first one to be removed.
- * The class provides methods to add and remove elements from the queue, as well as
- * to check the size and emptiness of the queue.
- */
-
 public class LinkedQueueADT<E> implements AbstractLinkedQueue<E> {
-    private class Node {
-        // data
-        private E element; // the actual element stored in the node
-        private Node next;
+    private class Node<E>{
+        // attributes
+        private E element;
+        private Node<E> next;
 
         // constructor
         public Node ( E element ) {
@@ -21,14 +13,10 @@ public class LinkedQueueADT<E> implements AbstractLinkedQueue<E> {
         }
     }
 
-    // Reference to the first node in the queue
-    private Node head;
-
-    // Reference to the last node in the queue
-    private Node tail;
-
-    // The current number of elements in the queue
-    private int size;
+    // attributes
+    private Node<E> head; // Reference to the first node in the queue
+    private Node<E> tail; // Reference to the last node in the queue
+    private int size; // The current number of elements in the queue
 
     // constructor
     public LinkedQueueADT (){
@@ -39,51 +27,86 @@ public class LinkedQueueADT<E> implements AbstractLinkedQueue<E> {
 
     @Override
     public void offer ( E element ) {
-        // TODO: Implement the logic to add an element to the end of the queue.
-        // Remember to create a new Node and update 'head', 'tail' pointers and 'size' appropriately.
+        Node<E> newNode = new Node<>(element);
+
+        // if the queue is empty
+        if (head == null && tail == null) {
+            this.head = newNode;
+            this.tail = newNode;
+        } else { // if the queue is not empty
+            this.tail.next = newNode;
+            this.tail = newNode;
+        }
+
+        this.size++;
     }
 
     @Override
     public E poll() {
-        // TODO: Implement the logic to remove and return the first element from the queue.
-        // Handle the case where the queue is empty by throwing an IllegalStateException.
-        // Update 'head', 'tail' pointers (if necessary) and 'size'.
-        return null; // Placeholder, will be replaced by actual element in your implementation
+        // if the queue is empty
+        if (head == null && tail == null) {
+            throw new IllegalStateException("Queue is empty");
+        }
+
+        E oldElement = this.head.element;
+
+        if (head == tail){ // if the queue has only one element
+            this.head = null;
+            this.tail = null;
+        } else { // if the queue has more than one element
+            Node<E> tempNode = this.head;
+            this.head = this.head.next;
+            tempNode.next = null;
+        }
+
+        this.size--;
+        return oldElement;
     }
 
     @Override
     public E peek() {
-        // TODO: Implement the logic to return the first element without removing it.
-        // Handle the case where the queue is empty by throwing an IllegalStateException.
-        return null; // Placeholder, will be replaced by actual element in your implementation
+        // if the queue is empty
+        if (head == null && tail == null) {
+            throw new IllegalStateException("Queue is empty");
+        }
+
+        return this.head.element;
     }
 
     @Override
     public int size () {
-        // TODO: Implement the logic to return the current number of elements in the queue.
-        return 0; // Placeholder, will be replaced by actual size in your implementation
+        return this.size;
     }
 
     @Override
     public boolean isEmpty () {
-        // TODO: Implement the logic to check if the queue is empty.
-        // Return true if empty, false otherwise.
-        return true; // Placeholder, will be replaced by actual check in your implementation
+        if (this.head == null && this.tail == null) {
+            return true;
+        }
+        return false;
     }
 
     @Override
     public String toString () {
-        // TODO: Implement the logic to return a string representation of the queue.
-        // For example, "[element1, element2, ..., lastElement]".
-        return "[]"; // Placeholder, will be replaced by actual string in your implementation
+        StringBuilder result = new StringBuilder();
+        result.append("[");
+        Node<E> tempNode = this.head;
+        while (tempNode != null) {
+            result.append(tempNode.element);
+            if (tempNode.next != null) {
+                result.append(", ");
+            }
+            tempNode = tempNode.next;
+        }
+
+        result.append("]");
+        return result.toString();
     }
 
 }
 
 class LinkedQueueADTRunner {
     public static void main ( String[] args ) {
-        // TODO: Understand and expand test cases in main method.
-        // These tests will likely fail until LinkedQueueADT methods are implemented.
         LinkedQueueADT<Integer> myQueue = new LinkedQueueADT<>();
 
         System.out.println(myQueue.isEmpty());
@@ -95,15 +118,17 @@ class LinkedQueueADTRunner {
         myQueue.offer( 30 );
         myQueue.offer( 40 );
 
-        System.out.println("Queue after adding elements: " + myQueue);
+        System.out.println("Queue after adding elements: " + myQueue); // [10, 20, 30, 40]
 
-        System.out.println("The element at the top of queue: " + myQueue.peek());
-        System.out.println("The element at the top of queue: " + myQueue.peek());
-        System.out.println("The element at the top of queue: " + myQueue.peek());
+        System.out.println("The element at the top of queue: " + myQueue.peek()); // 10
+        System.out.println("The element at the top of queue: " + myQueue.peek()); // 10
+        System.out.println("The element at the top of queue: " + myQueue.peek()); // 10
 
-        System.out.println("The element at the top of queue: " + myQueue.poll());
-        System.out.println("The element at the top of queue: " + myQueue.poll());
+        System.out.println("The element at the top of queue: " + myQueue.poll()); // 10
+        System.out.println("The element at the top of queue: " + myQueue.poll()); // 20
 
-        System.out.println(myQueue.size());
+        System.out.println(myQueue.size()); // 2
+
+        System.out.println("Queue after removing elements: " + myQueue); // [30, 40]
     }
 }
