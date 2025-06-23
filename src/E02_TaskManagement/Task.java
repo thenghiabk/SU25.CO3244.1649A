@@ -58,7 +58,7 @@ public class Task {
     @Override
     public String toString () {
         // TODO: Return a formatted string representation of the task (ID, Priority, Description).
-        return null;
+        return "ID: " + this.id + ", Priority: " + this.priority + ", Description: " + this.description;
     }
 }
 

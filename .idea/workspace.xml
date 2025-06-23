@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8715c46f-91e2-414a-8c95-9837624a8c90" name="Changes" comment="update LinkedQueueADT">
+    <list default="true" id="8715c46f-91e2-414a-8c95-9837624a8c90" name="Changes" comment="update Task">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/E02_TaskManagement/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/E02_TaskManagement/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/E02_TaskManagement/TaskBuddy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/E02_TaskManagement/TaskBuddy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/E02_TaskManagement/TaskBuddyTestDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/E02_TaskManagement/TaskBuddyTestDrive.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +57,7 @@
     "Application.LinkedStackTestDrive.executor": "Run",
     "Application.OOPBankingSystem.executor": "Run",
     "Application.SimpleBankingSystem.executor": "Run",
+    "Application.TaskBuddyTestDrive.executor": "Run",
     "Application.TaskTestDrive.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -434,7 +437,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750673046999</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="update Task">
+      <option name="closed" value="true" />
+      <created>1750674297037</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1750674297037</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -447,6 +458,18 @@
     <MESSAGE value="update LinkedListADT" />
     <MESSAGE value="update LinkedStackADT" />
     <MESSAGE value="update LinkedQueueADT" />
-    <option name="LAST_COMMIT_MESSAGE" value="update LinkedQueueADT" />
+    <MESSAGE value="update Task" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Task" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/E02_TaskManagement/TaskBuddyTestDrive.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -12,16 +12,21 @@ public class TaskBuddy {
     // data fields
     private ArrayListADT<Task> pendingTasks;
     private ArrayListADT<Task> completedTasks;
-    private int taskId;
+    private static int taskId;
 
     // constructor
     public TaskBuddy () {
-        // TODO: Initialize pendingTasks and completedTasks as new ArrayListADT instances, and set taskId to 0.
+        this.pendingTasks = new ArrayListADT<Task> ();
+        this.completedTasks = new ArrayListADT<Task> ();
+        this.taskId = 1;
     }
 
     // methods
     public void addTask ( String description, String priority ) {
         // TODO: Create a new Task with the current taskId, add it to pendingTasks, sort tasks by priority, and increment taskId.
+        Task newTask = new Task(taskId, description, priority);
+        pendingTasks.add(newTask);
+        taskId++;
     }
 
     private void sortTasksByPriority () {
@@ -32,6 +37,9 @@ public class TaskBuddy {
     public void displayTasks () {
         // TODO: Check if pendingTasks is empty. If so, print "No tasks to display.".
         // Otherwise, print "Task List:" and then iterate and print each task in pendingTasks.
+        for ( int i = 0; i < pendingTasks.size(); i++ ) {
+            System.out.println(pendingTasks.get(i));
+        }
     }
 
     public void completeTask ( int taskId ) {

@@ -33,10 +33,19 @@ public class TaskBuddyTestDrive {
                     // TODO: Prompt the user for task description and priority.
                     // Call taskBuddy.addTask with the collected information.
                     // Print "Task added successfully!".
+                    System.out.println("Enter task description: ");
+                    String description = scanner.nextLine();
+                    System.out.println("Enter task priority: ");
+                    String priority = scanner.nextLine();
+
+                    taskBuddy.addTask(description, priority);
+                    System.out.println("Task added successfully!");
+
                     break;
 
                 case 2:
                     // TODO: Call taskBuddy.displayTasks().
+                    taskBuddy.displayTasks();
                     break;
 
                 case 3:
