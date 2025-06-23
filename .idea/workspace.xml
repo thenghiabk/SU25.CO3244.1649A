@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8715c46f-91e2-414a-8c95-9837624a8c90" name="Changes" comment="update LinkedQueueADT">
-      <change afterPath="$PROJECT_DIR$/src/E02_TaskManagement/myUtils/AbstractList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E02_TaskManagement/myUtils/ArrayListADT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E02_TaskManagement/TaskBuddy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/E02_TaskManagement/TaskBuddy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L03_LinkedList/LinkedListADT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L03_LinkedList/LinkedListADT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/E02_TaskManagement/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/E02_TaskManagement/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +55,7 @@
     "Application.LinkedStackTestDrive.executor": "Run",
     "Application.OOPBankingSystem.executor": "Run",
     "Application.SimpleBankingSystem.executor": "Run",
+    "Application.TaskTestDrive.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -428,7 +426,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750671025758</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="update LinkedQueueADT">
+      <option name="closed" value="true" />
+      <created>1750673046999</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1750673046999</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

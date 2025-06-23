@@ -14,41 +14,63 @@ public class Task {
 
     // constructor
     public Task ( int id, String description, String priority ) {
-        // TODO: Initialize the Task object with the given id, description, and priority.
+        // Option 1
+        //this.id = id;
+        //this.description = description;
+        //this.priority = priority;
+
+        // Option 2
+        setId( id );
+        setDescription( description );
+        setPriority( priority );
     }
 
     // methods
 
     public int getId () {
-        // TODO: Return the ID of the task.
-        return 0;
+        return this.id;
     }
 
     private void setId ( int id ) {
-        // TODO: Set the ID of the task.
+        if (id < 0) {
+            throw new IllegalArgumentException("ID must be greater than 0.");
+        }
+
+        this.id = id;
     }
 
     public String getDescription () {
-        // TODO: Return the description of the task.
-        return null;
+        return this.description;
     }
 
     private void setDescription ( String description ) {
-        // TODO: Set the description of the task.
+        this.description = description;
     }
 
     public String getPriority () {
-        // TODO: Return the priority of the task.
-        return null;
+        return this.priority;
     }
 
     private void setPriority ( String priority ) {
-        // TODO: Set the priority of the task.
+        this.priority = priority;
     }
 
     @Override
     public String toString () {
         // TODO: Return a formatted string representation of the task (ID, Priority, Description).
         return null;
+    }
+}
+
+class TaskTestDrive{
+    public static void main ( String[] args ) {
+        Task task1 = new Task( 1, "Task 1", "A" );
+        System.out.println(task1.getId());
+        System.out.println(task1.getDescription());
+        System.out.println(task1.getPriority());
+
+        //Task task2 = new Task( -2, "Task 2", "B" ); // should throw IllegalArgumentException
+
+
     }
 }
