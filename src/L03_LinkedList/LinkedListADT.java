@@ -30,7 +30,7 @@ public class LinkedListADT<E> implements AbstractLinkedList<E> {
         Node<E> newNode = new Node<>(element);
 
         // if the list is empty
-        if (head == null && tail == null) {
+        if (this.head == null && this.tail == null) {
             this.head = newNode;
             this.tail = newNode;
         } else { // if the list is not empty
