@@ -6,10 +6,12 @@ The code below is a starting point and may require additional work to make it fu
 Use it as a reference and be sure to test it thoroughly before using it in production.
 */
 
+import E02_TaskManagement.myUtils.ArrayListADT;
+
 public class TaskBuddy {
     // data fields
-    //private ArrayListADT<Task> pendingTasks;
-    //private ArrayListADT<Task> completedTasks;
+    private ArrayListADT<Task> pendingTasks;
+    private ArrayListADT<Task> completedTasks;
     private int taskId;
 
     // constructor

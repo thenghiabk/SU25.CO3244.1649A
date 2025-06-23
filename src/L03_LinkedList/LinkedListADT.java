@@ -14,9 +14,9 @@ public class LinkedListADT<E> implements AbstractLinkedList<E> {
     }
 
      // attributes
-    private Node<E> head; // Reference to the first node in the queue
-    private Node<E> tail; // Reference to the last node in the queue
-    private int size; // The current number of elements in the queue
+    private Node<E> head; // Reference to the first node in the list
+    private Node<E> tail; // Reference to the last node in the list
+    private int size; // The current number of elements in the list
 
     // constructor
     public LinkedListADT () {
