@@ -17,7 +17,7 @@ public class LinkedStackADT<E> implements AbstractLinkedStack<E> {
     private Node<E> top;
     private int size;
 
-    // Constructor
+    // constructor
     public LinkedStackADT () {
         this.top = null;
         this.size = 0;
