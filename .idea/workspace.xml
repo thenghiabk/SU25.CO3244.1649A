@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8715c46f-91e2-414a-8c95-9837624a8c90" name="Changes" comment="update Task">
+      <change afterPath="$PROJECT_DIR$/src/L03_LinkedList/LinkedListADTTestDrive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L03_LinkedQueue/LinkedQueueADTTestDrive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L03_LinkedStack/LinkedStackADTTestDrive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E02_TaskManagement/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/E02_TaskManagement/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E02_TaskManagement/TaskBuddy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/E02_TaskManagement/TaskBuddy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E02_TaskManagement/TaskBuddyTestDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/E02_TaskManagement/TaskBuddyTestDrive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L03_LinkedList/LinkedListADT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L03_LinkedList/LinkedListADT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L03_LinkedQueue/LinkedQueueADT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L03_LinkedQueue/LinkedQueueADT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L03_LinkedStack/LinkedStackADT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L03_LinkedStack/LinkedStackADT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,29 +48,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ArrayListADTTestDrive.executor": "Run",
-    "Application.BuiltInArrayListExample.executor": "Run",
-    "Application.CodeBuddy.executor": "Run",
-    "Application.ComplexBankingSystem.executor": "Run",
-    "Application.LightTestDrive.executor": "Run",
-    "Application.LinkedListADTTestDrive.executor": "Run",
-    "Application.LinkedQueueADTRunner.executor": "Run",
-    "Application.LinkedStackTestDrive.executor": "Run",
-    "Application.OOPBankingSystem.executor": "Run",
-    "Application.SimpleBankingSystem.executor": "Run",
-    "Application.TaskBuddyTestDrive.executor": "Run",
-    "Application.TaskTestDrive.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Workspace/IdeaProjects/DSA1649A-CO3244/src/E02_TaskManagement",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ArrayListADTTestDrive.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BuiltInArrayListExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CodeBuddy.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ComplexBankingSystem.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LightTestDrive.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedListADTTestDrive.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedQueueADTRunner.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedStackTestDrive.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPBankingSystem.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SimpleBankingSystem.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TaskBuddyTestDrive.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TaskTestDrive.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Workspace/IdeaProjects/DSA1649A-CO3244/src/E02_TaskManagement&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Workspace\IdeaProjects\DSA1649A-CO3244\src\E02_TaskManagement" />
@@ -78,6 +81,11 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Workspace\IdeaProjects\DSA1649A-CO3244\src\E01_SimpleBankingSystem\Simple" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="L03_LinkedQueue" />
+      <recent name="L03_LinkedStack" />
+      <recent name="L03_LinkedList" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="E01_SimpleBankingSystem.V2_OOP" />
@@ -445,7 +453,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750674297037</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="update Task">
+      <option name="closed" value="true" />
+      <created>1750674959218</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1750674959218</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -460,16 +476,5 @@
     <MESSAGE value="update LinkedQueueADT" />
     <MESSAGE value="update Task" />
     <option name="LAST_COMMIT_MESSAGE" value="update Task" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/E02_TaskManagement/TaskBuddyTestDrive.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
