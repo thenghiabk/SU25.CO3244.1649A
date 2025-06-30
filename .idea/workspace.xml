@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8715c46f-91e2-414a-8c95-9837624a8c90" name="Changes" comment="update Task">
-      <change afterPath="$PROJECT_DIR$/src/L03_LinkedList/LinkedListADTTestDrive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L03_LinkedQueue/LinkedQueueADTTestDrive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L03_LinkedStack/LinkedStackADTTestDrive.java" afterDir="false" />
+    <list default="true" id="8715c46f-91e2-414a-8c95-9837624a8c90" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/L04_Sorting/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L03_LinkedList/LinkedListADT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L03_LinkedList/LinkedListADT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L03_LinkedQueue/LinkedQueueADT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L03_LinkedQueue/LinkedQueueADT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L03_LinkedStack/LinkedStackADT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L03_LinkedStack/LinkedStackADT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,29 +43,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ArrayListADTTestDrive.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BuiltInArrayListExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CodeBuddy.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ComplexBankingSystem.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LightTestDrive.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LinkedListADTTestDrive.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LinkedQueueADTRunner.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LinkedStackTestDrive.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OOPBankingSystem.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SimpleBankingSystem.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TaskBuddyTestDrive.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TaskTestDrive.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Workspace/IdeaProjects/DSA1649A-CO3244/src/E02_TaskManagement&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ArrayListADTTestDrive.executor": "Run",
+    "Application.BuiltInArrayListExample.executor": "Run",
+    "Application.CodeBuddy.executor": "Run",
+    "Application.ComplexBankingSystem.executor": "Run",
+    "Application.LightTestDrive.executor": "Run",
+    "Application.LinkedListADTTestDrive.executor": "Run",
+    "Application.LinkedQueueADTRunner.executor": "Run",
+    "Application.LinkedStackTestDrive.executor": "Run",
+    "Application.OOPBankingSystem.executor": "Run",
+    "Application.SelectionSortTestDrive.executor": "Run",
+    "Application.SimpleBankingSystem.executor": "Run",
+    "Application.TaskBuddyTestDrive.executor": "Run",
+    "Application.TaskTestDrive.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Workspace/IdeaProjects/DSA1649A-CO3244/src/E02_TaskManagement",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Workspace\IdeaProjects\DSA1649A-CO3244\src\E02_TaskManagement" />
@@ -461,7 +457,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750674959218</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="update">
+      <option name="closed" value="true" />
+      <created>1751264313034</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1751264313034</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -475,6 +479,7 @@
     <MESSAGE value="update LinkedStackADT" />
     <MESSAGE value="update LinkedQueueADT" />
     <MESSAGE value="update Task" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Task" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
