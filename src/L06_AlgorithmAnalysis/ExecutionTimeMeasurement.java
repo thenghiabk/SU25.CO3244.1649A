@@ -23,22 +23,22 @@ public class ExecutionTimeMeasurement {
     public static void main(String[] args) {
 
         // Number of iterations for the repeat functions
-        int numOfLoop = 50_000;
+        int numOfLoop = 13_000_000;
 
         // Record start time
-        long startTime = System.currentTimeMillis();
+        long startTime = System.nanoTime();
 
         // Execute repeat1 function
-        repeat1("A", numOfLoop);
+        repeat2("A", numOfLoop);
 
         // Record end time
-        long endTime = System.currentTimeMillis();
+        long endTime = System.nanoTime();
 
         // Calculate elapsed time in milliseconds
         long elapsedTime = endTime - startTime;
 
         // Output the execution time
-        System.out.println("Execution time: " + elapsedTime + " (ms).");
+        System.out.println("Execution time: " + elapsedTime + " (ns).");
     }
 
     // Concatenates the string 'c' 'n' times using String
