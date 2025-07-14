@@ -3,6 +3,30 @@ package L05_Searching;
 public class BinarySearch {
     public static int search(int[] arr, int target) {
 
+        int count = 0;
+
+        int left = 0;
+        int right = arr.length - 1;
+
+        while(left <= right){
+
+            int mid = (left + right) / 2;
+
+            if (arr[mid] == target) {
+                return mid;
+            }
+
+            if ( target < arr[mid]){
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+
+            count++;
+
+            System.out.println("Count: " + count);
+        }
+
 
 
         return -1;
