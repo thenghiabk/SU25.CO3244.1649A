@@ -92,13 +92,13 @@ public class ArrayListADT<E> implements AbstractList<E> {
         nextIndex--;
 
         if (nextIndex < elements.length / 3) {
-            E[] largerElements = (E[]) new Object[elements.length / 2];
+            E[] smallerElements = (E[]) new Object[elements.length / 2];
 
             for ( int i = 0; i < nextIndex; i++ ) {
-                largerElements[i] = elements[i];
+                smallerElements[i] = elements[i];
             }
 
-            elements = largerElements;
+            elements = smallerElements;
         }
 
         return oldElement;
