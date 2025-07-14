@@ -15,7 +15,7 @@ public class LinearSearch {
 class LinearSearchTestDrive {
     public static void main ( String[] args ) {
         int[] numbers = {7, 1, 3, 6, 5};
-        int target = 8;
+        int target = 6;
         int foundIndex = LinearSearch.search(numbers, target);
         if (foundIndex == -1) {
             System.out.println("Target " + target + " not found");
