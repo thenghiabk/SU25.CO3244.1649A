@@ -36,7 +36,7 @@ public class BinarySearch {
 class BinarySearchTestDrive {
     public static void main ( String[] args ) {
         int[] numbers = { 1, 2, 4, 7, 10, 14, 15, 18, 20 };
-        int target = 15;
+        int target = 20;
         int foundIndex = BinarySearch.search( numbers, target );
         if ( foundIndex == -1 ) {
             System.out.println( "Target " + target + " not found" );
